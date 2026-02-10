@@ -26,7 +26,7 @@ export function EventsGrid() {
       description: "A high-energy, battle-royale–style coding competition where teams of 3-4 compete through multiple elimination rounds. All teams begin together in Round 1 (The Drop), solving basic coding and debugging tasks, with the weakest and slowest teams eliminated. Round 2 (The Shrinking Zone) increases time pressure and focuses on logic-heavy and moderate algorithmic problems like sorting, searching, and classic LeetCode-style challenges, allowing only the top half to advance. In the Final Showdown, remaining teams face advanced problem-solving under extreme time constraints, with teams eliminated one by one as others finish correct solutions—crowning the last team standing as the winner and the second-last as runner-up.",
       teamSize: "3-4 members",
       venue: "TBD",
-      coordinator: "TBD",
+      coordinator: "Yugan +91 9943446455 Ragul +91 9342341945",
       registerLink: "https://forms.gle/a4qS4rVqWXjGPKpz6"
     },
     { 
@@ -37,7 +37,7 @@ export function EventsGrid() {
       description: "Participants compete in teams through a sequence of interconnected tech puzzles, where solving one challenge unlocks the next clue or digital access toward the final escape. The challenges include debugging buggy code snippets (in C, Python, Java, or JavaScript) to uncover passwords or keys, decrypting messages using ciphers like Caesar, substitution, binary, or Base64 to reveal locations or locks, and solving logic puzzles that gradually increase in technical complexity—keeping the experience engaging for both beginners and experienced coders.",
       teamSize: "2-3 members",
       venue: "TBD",
-      coordinator: "TBD",
+      coordinator: "Hemanath - +91 9360823431 Sachin - +91 7603855619",
       registerLink: "https://docs.google.com/forms/d/1996xTndjfdsVX5S7GSTarGK8IQEh2k8Qf9ssUn8cD9A/edit?pli=1"
     },
     { 
@@ -48,8 +48,8 @@ export function EventsGrid() {
       description: "This event is conducted for a maximum duration of two hours in the afternoon session and involves teams of 2–3 participants competing through multiple rounds of increasing difficulty. In each round, teams are presented with 2–4 images or visual clues that represent technical ideas, functions, or references. By logically connecting all the clues, teams must identify a single technical term, concept, or technology within a strict time limit of 30–60 seconds. Scoring is based on correctness and speed, with bonus points for the fastest valid responses. After each question, the correct connection is revealed with a brief technical explanation, and audience participation is allowed once teams have submitted their answers.",
       teamSize: "2-3 members",
       venue: "TBD",
-      coordinator: "TBD",
-      registerLink: "https://forms.google.com"
+      coordinator: "Devasena - +91 9003433722 Stefan - +91 8925117972",
+      registerLink: "https://docs.google.com/forms/d/e/1FAIpQLSfXr6Rt-QfGwC0sGAxp1chXfjokR0QZld1ZRNlxFHKs4j0xKw/viewform?usp=publish-editor"
     },
     { 
       code: "E04", 
@@ -59,7 +59,7 @@ export function EventsGrid() {
       description: "The poster presentation event provides participants with an opportunity to present their technical ideas and solutions for a given problem statement through a well-structured poster. Participants are required to clearly explain the problem, their proposed approach, methodology, and expected outcomes using visual and technical content. Evaluation is based on clarity of concept, technical depth, innovation, and the effectiveness of the poster in communicating the solution.",
       teamSize: "2-3 members",
       venue: "TBD",
-      coordinator: "TBD",
+      coordinator: "John - +91 6380759764 Sanjana - +91 9176638977",
       registerLink: "https://forms.gle/7XzSmhZKHBVPPvVz9"
     },
     { 
@@ -70,8 +70,8 @@ export function EventsGrid() {
       description: "The Capture the Flag (CTF) event consists of a series of cybersecurity challenges where participants analyze problems, identify vulnerabilities, and solve puzzles to uncover hidden \"flags.\" Each challenge represents a real-world scenario involving cryptography, web applications, forensics, or networking. Participants earn points for every flag they capture, with increasing difficulty levels testing their analytical thinking, technical skills, and ability to apply cybersecurity concepts under time constraints.",
       teamSize: "2 members",
       venue: "TBD",
-      coordinator: "TBD",
-      registerLink: "https://forms.google.com"
+      coordinator: "John - +91 6380759764 Sanjana - +91 9176638977",
+      registerLink: "https://docs.google.com/forms/d/e/1FAIpQLSc6NJxdajzUNPNBaTZVayW6ysFvJ6PHH4ccOv2FPVNTQkvZuw/viewform"
     },
     { 
       code: "E06", 
@@ -81,8 +81,8 @@ export function EventsGrid() {
       description: "Code to the Upside Down begins with teams of one to three participants assembling on the board, with multiple teams playing at the same time. The game starts as teams take turns rolling the dice, and each roll moves the team forward by the corresponding number of tiles. Once a team lands on a tile, they must answer the technical question placed on that tile, which may be based on programming basics, logical reasoning, computer science fundamentals, or current technology trends. If the team answers correctly, they remain on that tile and wait for their next turn. If the answer is incorrect, the team moves back to its previous position. At this point, the question is opened to all other teams, and the first team to buzz in gets a chance to answer; a correct buzzer answer allows that team to move two steps forward. If a team rolls a five, they immediately receive an extra turn. This sequence continues as teams progress across the board, moving deeper into the Upside Down with every roll, until one team reaches the final tile and successfully escapes, winning the game.",
       teamSize: "2-3 members",
       venue: "TBD",
-      coordinator: "TBD",
-      registerLink: "https://forms.google.com"
+      coordinator: "Smirithi - +91 9444189802 Varshini - +91 9444684230",
+      registerLink: "https://docs.google.com/forms/d/e/1FAIpQLSeOqQ01I5Uru28o3dC6Bz5IIDb3YkDQMg002Jak_N1Jknm1pA/viewform"
     },
   ];
 
@@ -248,7 +248,7 @@ export function EventsGrid() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm"
+            className="fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-black/80 backdrop-blur-sm"
             onClick={() => setSelectedEvent(null)}
           >
             <motion.div
@@ -256,52 +256,54 @@ export function EventsGrid() {
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.9, y: 20 }}
               transition={{ duration: 0.3 }}
-              className="relative w-full max-w-2xl max-h-[90vh] overflow-y-auto bg-gradient-to-br from-gray-900 via-black to-gray-900 dark:from-white dark:via-gray-100 dark:to-white border border-gray-800 dark:border-gray-300"
+              className="relative w-full max-w-2xl max-h-[90vh] overflow-y-auto overflow-x-hidden bg-gradient-to-br from-gray-900 via-black to-gray-900 dark:from-white dark:via-gray-100 dark:to-white border border-gray-800 dark:border-gray-300"
               onClick={(e) => e.stopPropagation()}
             >
               {/* Modal Header */}
-              <div className="sticky top-0 bg-black/90 dark:bg-white/90 backdrop-blur-sm border-b border-gray-800 dark:border-gray-300 p-6 z-10">
-                <div className="flex items-start justify-between gap-4">
-                  <div>
+              <div className="sticky top-0 bg-black/90 dark:bg-white/90 backdrop-blur-sm border-b border-gray-800 dark:border-gray-300 p-4 sm:p-6 z-10">
+                {/* <div className="flex items-center justify-between gap-3"> */}
+                  <div className="p-6">
                     {/* Event Code Badge */}
-                    <div className="inline-block mb-3">
-                      <div className="flex items-center gap-2 border-2 border-red-600 px-3 py-1 bg-red-600/20">
-                        <div className="w-2 h-2 bg-red-600 rounded-full animate-pulse" />
-                        <span className="text-red-500 font-black tracking-wider text-sm">
-                          {selectedEvent.code}
-                        </span>
+                    <div className="flex items-center justify-between ">
+                        <div className="inline-block mb-2 sm:mb-3">
+                        <div className="flex items-center gap-2 border-2 border-red-600 px-3 py-1 bg-red-600/20">
+                          <div className="w-2 h-2 bg-red-600 rounded-full animate-pulse" />
+                          <span className="text-red-500 font-black tracking-wider text-sm">
+                            {selectedEvent.code}
+                          </span>
+                        </div>
                       </div>
-                    </div>
-                    
-                    <h3 className="text-2xl md:text-3xl font-black text-white dark:text-gray-900 uppercase tracking-tight">
-                      {selectedEvent.title}
-                    </h3>
-                    <p className="text-cyan-400 text-sm mt-1 font-medium">
-                      {selectedEvent.subtitle}
-                    </p>
-                  </div>
-                  
-                  {/* Close Button */}
-                  <button
+                      <button
                     onClick={() => setSelectedEvent(null)}
                     className="p-2 border border-gray-700 dark:border-gray-400 hover:border-red-600 dark:hover:border-red-500 hover:bg-red-600/10 transition-colors"
                   >
                     <X className="w-5 h-5 text-gray-400 dark:text-gray-600 hover:text-red-500" />
                   </button>
-                </div>
+                    </div>
+                    
+                    <h3 className="text-xl sm:text-2xl md:text-3xl font-black text-white dark:text-gray-900 uppercase tracking-tight">
+                      {selectedEvent.title}
+                    </h3>
+                    <p className="text-cyan-400 text-xs sm:text-sm mt-1 font-medium">
+                      {selectedEvent.subtitle}
+                    </p>
+                  </div>
+                  
+                  {/* Close Button */}
+                {/* </div> */}
               </div>
 
               {/* Modal Content */}
-              <div className="p-6">
+              <div className="p-6 sm:p-6">
                 {/* Divider */}
-                <div className="h-[2px] w-full bg-gradient-to-r from-red-600 to-cyan-400 mb-6" />
+                <div className="h-[2px] w-full bg-gradient-to-r from-red-600 to-cyan-400 mb-4 sm:mb-6" />
 
                 {/* Event Info Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 mb-4 sm:mb-6">
                   {/* Team Size */}
-                  <div className="flex items-center gap-3 px-4 py-4 bg-cyan-400/10 border border-cyan-400/30">
-                    <Users className="w-5 h-5 text-cyan-400" />
-                    <div>
+                  <div className="flex items-center gap-3 px-3 sm:px-4 py-3 sm:py-4 bg-cyan-400/10 border border-cyan-400/30 overflow-hidden">
+                    <Users className="w-5 h-5 text-cyan-400 shrink-0" />
+                    <div className="min-w-0">
                       <span className="text-gray-500 text-xs block">Team Size</span>
                       <span className="text-cyan-400 font-black tracking-wider text-sm">
                         {selectedEvent.teamSize}
@@ -310,9 +312,9 @@ export function EventsGrid() {
                   </div>
 
                   {/* Venue */}
-                  <div className="flex items-center gap-3 px-4 py-4 bg-red-600/10 border border-red-600/30">
-                    <MapPin className="w-5 h-5 text-red-500" />
-                    <div>
+                  <div className="flex items-center gap-3 px-3 sm:px-4 py-3 sm:py-4 bg-red-600/10 border border-red-600/30 overflow-hidden">
+                    <MapPin className="w-5 h-5 text-red-500 shrink-0" />
+                    <div className="min-w-0">
                       <span className="text-gray-500 text-xs block">Venue</span>
                       <span className="text-red-500 font-black tracking-wider text-sm">
                         {selectedEvent.venue}
@@ -321,11 +323,11 @@ export function EventsGrid() {
                   </div>
 
                   {/* Coordinator */}
-                  <div className="flex items-center gap-3 px-4 py-4 bg-gray-800/50 dark:bg-gray-200/50 border border-gray-700 dark:border-gray-400">
-                    <User className="w-5 h-5 text-gray-400 dark:text-gray-600" />
-                    <div>
+                  <div className="flex items-center gap-3 px-3 sm:px-4 py-3 sm:py-4 bg-gray-800/50 dark:bg-gray-200/50 border border-gray-700 dark:border-gray-400 overflow-hidden">
+                    <User className="w-5 h-5 text-gray-400 dark:text-gray-600 shrink-0" />
+                    <div className="min-w-0">
                       <span className="text-gray-500 text-xs block">Coordinator</span>
-                      <span className="text-white dark:text-gray-900 font-black tracking-wider text-sm">
+                      <span className="text-white dark:text-gray-900 font-bold tracking-wide text-xs sm:text-sm break-words">
                         {selectedEvent.coordinator}
                       </span>
                     </div>
@@ -337,7 +339,7 @@ export function EventsGrid() {
                   <h4 className="text-red-500 font-black tracking-wider text-sm mb-3 uppercase">
                     Event Description
                   </h4>
-                  <p className="text-gray-400 dark:text-gray-600 text-base leading-relaxed text-justify">
+                  <p className="text-gray-400 dark:text-gray-600 text-sm sm:text-base leading-relaxed text-justify break-words">
                     {selectedEvent.description}
                   </p>
                 </div>
@@ -347,7 +349,7 @@ export function EventsGrid() {
                   href={selectedEvent.registerLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block w-full text-center py-4 bg-gradient-to-r from-red-600 to-red-700 hover:from-red-500 hover:to-red-600 border border-red-500 text-white font-black tracking-wider uppercase transition-all duration-300 group"
+                  className="block w-full text-center py-3 sm:py-4 bg-gradient-to-r from-red-600 to-red-700 hover:from-red-500 hover:to-red-600 border border-red-500 text-white font-black tracking-wider text-sm sm:text-base uppercase transition-all duration-300 group"
                 >
                   <span className="flex items-center justify-center gap-2">
                     REGISTER NOW

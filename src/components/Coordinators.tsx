@@ -21,7 +21,7 @@ export function Coordinators() {
     },
     {
         number: "03",
-        name: "Swathi",
+        name: "Swathi A",
         role: "General Secretary",
         department: "placeholder",
         email: "placeholder",
@@ -29,7 +29,7 @@ export function Coordinators() {
     },
     {
         number: "04",
-        name: "Iyappan",
+        name: "Iyappan N",
         role: "Joint-Secretary",
         department: "placeholder",
         email: "placeholder",
