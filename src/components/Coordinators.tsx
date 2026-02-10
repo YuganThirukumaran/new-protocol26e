@@ -5,35 +5,35 @@ export function Coordinators() {
   const coordinators = [
     {
       number: "01",
-      name: "placeholder",
-      role: "placeholder",
+      name: "MADHUMITHA R",
+      role: "PRESIDENT",
       department: "placeholder",
       email: "placeholder",
-      phone: "placeholder",
+      phone: "+91 9498330139",
     },
     {
         number: "02",
-        name: "placeholder",
-        role: "placeholder",
+        name: "SANJEEV KUMAR",
+        role: "VICE-PRESIDENT",
         department: "placeholder",
         email: "placeholder",
-        phone: "placeholder",
+        phone: "+91 7358646539",
     },
     {
         number: "03",
-        name: "placeholder",
-        role: "placeholder",
+        name: "Swathi",
+        role: "General Secretary",
         department: "placeholder",
         email: "placeholder",
-        phone: "placeholder",
+        phone: "+91 7358665496",
     },
     {
         number: "04",
-        name: "placeholder",
-        role: "placeholder",
+        name: "Iyappan",
+        role: "Joint-Secretary",
         department: "placeholder",
         email: "placeholder",
-        phone: "placeholder",
+        phone: "+91 9344025755",
     },
   ];
 
@@ -134,20 +134,11 @@ export function Coordinators() {
                     {coordinator.role}
                   </p>
 
-                  {/* Department */}
-                  <p className="text-gray-500 text-xs mb-4">
-                    {coordinator.department}
-                  </p>
-
                   {/* Divider */}
                   <div className="h-[2px] w-full bg-gradient-to-r from-red-600 via-cyan-400 to-transparent mb-4" />
 
                   {/* Contact Info */}
-                  <div className="space-y-2">
-                    <div className="flex items-center gap-2 text-gray-400 text-xs group-hover:text-gray-300 transition-colors">
-                      <Mail className="w-3 h-3 text-red-600" />
-                      <span className="truncate">{coordinator.email}</span>
-                    </div>
+                  <div className="space-y-2"> 
                     <div className="flex items-center gap-2 text-gray-400 text-xs group-hover:text-gray-300 transition-colors">
                       <Phone className="w-3 h-3 text-cyan-400" />
                       <span>{coordinator.phone}</span>

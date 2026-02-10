@@ -11,68 +11,23 @@ export function Timeline() {
   const checkpoints = [
     {
       sector: "S1",
-      time: "09:00",
-      date: "Day 1",
-      title: "Opening Ceremony",
-      location: "Main Auditorium",
-      description: "Race weekend begins",
+      time: "09:30 AM",
+      title: "Inauguration of PROTOCOL 26E",
+      location: "Library Seminar Hall"
     },
     {
       sector: "S2",
-      time: "10:30",
-      date: "Day 1",
-      title: "Technical Workshops",
-      location: "Workshop Zones",
-      description: "Skills training session",
+      time: "10:00 AM",
+      title: "It's lights out and away we go!",
+      location: "Respective Event Venues",
+      description: "Event Begins"
     },
     {
       sector: "S3",
-      time: "14:00",
-      date: "Day 1",
-      title: "Events Round 1",
-      location: "Competition Arena",
-      description: "First heat begins",
-    },
-    {
-      sector: "S4",
-      time: "18:00",
-      date: "Day 1",
-      title: "Networking Session",
-      location: "Exhibition Hall",
-      description: "Connect with teams",
-    },
-    {
-      sector: "S5",
-      time: "09:00",
-      date: "Day 2",
-      title: "Events Round 2",
-      location: "Competition Arena",
-      description: "Qualifying rounds",
-    },
-    {
-      sector: "S6",
-      time: "14:00",
-      date: "Day 2",
-      title: "Finals",
-      location: "Main Arena",
-      description: "Championship battle",
-    },
-    {
-      sector: "S7",
-      time: "17:00",
-      date: "Day 2",
-      title: "Prize Distribution",
-      location: "Main Auditorium",
-      description: "Podium ceremony",
-    },
-    {
-      sector: "F",
-      time: "19:00",
-      date: "Day 2",
-      title: "Closing Ceremony",
-      location: "Main Auditorium",
-      description: "Checkered flag",
-    },
+      time: "2:00 PM",
+      title: "Valedictory Ceremony",
+      location: "Library Seminar Hall"
+    }
   ];
 
   return (
@@ -151,14 +106,14 @@ export function Timeline() {
               />
 
               {/* Checkpoints */}
-              <div className="flex gap-24 px-12">
+              <div className="flex gap-24 px-12 items-stretch">
                 {checkpoints.map((checkpoint, idx) => (
                   <motion.div
                     key={idx}
                     initial={{ opacity: 0, y: 50 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: idx * 0.1 }}
-                    className="relative flex flex-col items-center"
+                    className="relative flex flex-col items-center flex-1"
                   >
                     {/* Sector Number Circle */}
                     <div className="relative z-20 mb-8">
@@ -203,7 +158,7 @@ export function Timeline() {
                     {/* Info Card */}
                     <motion.div
                       whileHover={{ y: -5 }}
-                      className="w-72 bg-gradient-to-br from-gray-900/90 to-black/90 border border-gray-800 backdrop-blur-sm p-6 relative group"
+                      className="w-72 flex-1 bg-gradient-to-br from-gray-900/90 to-black/90 border border-gray-800 backdrop-blur-sm p-6 relative group"
                     >
                       {/* Neon Glow */}
                       <div className="absolute -inset-[1px] bg-gradient-to-r from-red-600/0 via-cyan-400/0 to-red-600/0 group-hover:from-red-600/30 group-hover:via-cyan-400/30 group-hover:to-red-600/30 blur-sm opacity-0 group-hover:opacity-100 transition-all duration-300 pointer-events-none" />
@@ -237,9 +192,11 @@ export function Timeline() {
                         </div>
 
                         {/* Description */}
-                        <p className="text-gray-500 text-sm">
-                          {checkpoint.description}
-                        </p>
+                        {checkpoint.description && (
+                          <p className="text-gray-500 text-sm">
+                            {checkpoint.description}
+                          </p>
+                        )}
 
                         {/* Corner Accent */}
                         <div className="absolute top-2 right-2 w-4 h-4 border-t border-r border-cyan-400/30" />
@@ -251,7 +208,7 @@ export function Timeline() {
               </div>
 
               {/* Finish Line */}
-              <div className="absolute top-1/2 right-12 w-12 transform -translate-y-1/2">
+              <div className="absolute top-1/2 right-0 w-12 transform -translate-y-1/2">
                 <div className="h-24 w-full bg-[repeating-linear-gradient(45deg,#000,#000_10px,#fff_10px,#fff_20px)]" />
               </div>
             </div>

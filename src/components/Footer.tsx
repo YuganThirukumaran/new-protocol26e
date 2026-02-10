@@ -4,9 +4,8 @@ import { Instagram, Linkedin, Twitter, Mail, MapPin, Phone } from "lucide-react"
 export function Footer() {
   const socialLinks = [
     { icon: Instagram, label: "Instagram", href: "#" },
-    { icon: Linkedin, label: "LinkedIn", href: "#" },
-    { icon: Twitter, label: "Twitter", href: "#" },
-    { icon: Mail, label: "Email", href: "#" },
+    { icon: Linkedin, label: "LinkedIn", href: "mailto:ait@svce.ac.in" },
+    { icon: Mail, label: "Email", href: "ait@svce.ac.in" },
   ];
 
   return (
@@ -105,7 +104,7 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-3 text-gray-500 dark:text-gray-600 text-sm">
                 <Mail className="w-4 h-4 text-cyan-400 flex-shrink-0" />
-                <span>ait placeholder</span>
+                <span>ait@svce.ac.in</span>
               </li>
               <li className="flex items-center gap-3 text-gray-500 dark:text-gray-600 text-sm">
                 <Phone className="w-4 h-4 text-red-600 flex-shrink-0" />
@@ -139,20 +138,7 @@ export function Footer() {
               ))}
             </div>
 
-            {/* Newsletter */}
-            <div className="mt-6">
-              <p className="text-gray-600 dark:text-gray-500 text-xs mb-2">Stay updated with race alerts</p>
-              <div className="flex gap-2">
-                <input
-                  type="email"
-                  placeholder="Email"
-                  className="flex-1 bg-gray-900 dark:bg-white border border-gray-800 dark:border-gray-300 px-3 py-2 text-sm text-gray-400 dark:text-gray-700 focus:border-cyan-400 dark:focus:border-cyan-500 focus:outline-none transition-colors"
-                />
-                <button className="px-4 py-2 bg-red-600 text-white text-xs font-black uppercase hover:bg-red-700 transition-colors">
-                  Go
-                </button>
-              </div>
-            </div>
+
           </motion.div>
         </div>
 

@@ -50,7 +50,6 @@ export default function App() {
         </svg>
         <div className="absolute -inset-[2px] bg-red-600 blur-md opacity-0 group-hover:opacity-50 transition-opacity pointer-events-none" />
       </button>
-      <ThemeToggle />
     </div>
     </ThemeProvider>
   );

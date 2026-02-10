@@ -90,7 +90,7 @@ export function HeroSection() {
         >
           <div className="inline-block border-2 border-red-600 px-4 py-1 mb-6 bg-red-600/10 backdrop-blur-sm">
             <span className="text-red-500 tracking-[0.3em] text-sm font-bold">
-              AIT TECHNICAL SYMPOSIUM
+              A NATIONAL-LEVEL TECHNICAL SYMPOSIUM
             </span>
           </div>
         </motion.div>
@@ -134,7 +134,8 @@ export function HeroSection() {
           transition={{ duration: 0.8, delay: 0.8 }}
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          className="group relative px-8 py-4 bg-red-600 text-white overflow-hidden font-black tracking-wider uppercase"
+          onClick={() => document.getElementById('events')?.scrollIntoView({ behavior: 'smooth' })}
+          className="group relative px-8 py-4 bg-red-600 text-white overflow-hidden font-black tracking-wider uppercase cursor-pointer"
         >
           <div className="absolute inset-0 bg-gradient-to-r from-red-700 via-red-600 to-red-700 bg-[length:200%_100%] animate-[shimmer_2s_infinite]" />
           <div className="absolute inset-0 bg-cyan-500/20 opacity-0 group-hover:opacity-100 transition-opacity" />
@@ -153,8 +154,7 @@ export function HeroSection() {
           className="absolute bottom-12 left-1/2 -translate-x-1/2 flex gap-8 md:gap-16"
         >
           {[
-            { label: "EVENTS", value: "08" },
-            { label: "DAYS", value: "02" },
+            { label: "EVENTS", value: "06" },
             { label: "INNOVATION", value: "∞" },
           ].map((stat, idx) => (
             <div key={idx} className="text-center">
