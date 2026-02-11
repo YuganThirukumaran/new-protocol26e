@@ -71,7 +71,7 @@ export function EventsGrid() {
       description: "The Capture the Flag (CTF) event consists of a series of cybersecurity challenges where participants analyze problems, identify vulnerabilities, and solve puzzles to uncover hidden \"flags.\" Each challenge represents a real-world scenario involving cryptography, web applications, forensics, or networking. Participants earn points for every flag they capture, with increasing difficulty levels testing their analytical thinking, technical skills, and ability to apply cybersecurity concepts under time constraints.",
       teamSize: "2 members",
       venue: "TBD",
-      coordinator: "John - +91 6380759764 Sanjana - +91 9176638977",
+      coordinator: "Dhanesh - +91 6369454641  Balaji - +91 9363626783",
       registerLink: "https://docs.google.com/forms/d/e/1FAIpQLSc6NJxdajzUNPNBaTZVayW6ysFvJ6PHH4ccOv2FPVNTQkvZuw/viewform"
     },
     { 
