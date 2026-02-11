@@ -19,7 +19,7 @@ export function Coordinators() {
         department: "placeholder",
         email: "placeholder",
         phone: "+91 7358646539",
-        image: "/sanjeev.jpeg",
+        image: "/sanjeev.png",
     },
     {
         number: "03",
@@ -28,7 +28,7 @@ export function Coordinators() {
         department: "placeholder",
         email: "placeholder",
         phone: "+91 7358665496",
-        image: "Swathi A.webp",
+        image: "swathi.jpeg",
     },
     {
         number: "04",

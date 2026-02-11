@@ -17,7 +17,10 @@ interface Event {
   description: string;
   teamSize: string;
   venue: string;
-  coordinator: string;
+  coordinators: {
+    name: string;
+    phone: string;
+  }[];
   registerLink: string;
 }
 
@@ -191,9 +194,19 @@ export function EventDetails({ event, onBack }: EventDetailsProps) {
               <span className="text-gray-400 text-[10px] sm:text-xs block uppercase tracking-wider">
                 Coordinator
               </span>
-              <span className="text-white font-black tracking-wider text-sm sm:text-base break-words">
-                {event.coordinator}
-              </span>
+              <div className="mt-1 grid grid-cols-1 sm:grid-cols-2 gap-3">
+                {event.coordinators.map((coordinator) => (
+                  <div
+                    key={`${coordinator.name}-${coordinator.phone}`}
+                    className="flex flex-col text-white font-black tracking-wider text-sm sm:text-base break-words"
+                  >
+                    <span>{coordinator.name}</span>
+                    <span className="text-gray-300 text-xs sm:text-sm">
+                      {coordinator.phone}
+                    </span>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </motion.div>
