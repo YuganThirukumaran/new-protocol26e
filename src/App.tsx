@@ -25,8 +25,6 @@ export default function App() {
         <EventsGrid />
         <Timeline />
         <Coordinators />
-        <Sponsors />
-        <Footer />
       </div>
 
       {/* Scroll to Top Button */}

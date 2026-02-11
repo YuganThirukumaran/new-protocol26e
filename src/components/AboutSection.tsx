@@ -71,7 +71,7 @@ export function AboutSection() {
             className="max-w-5xl"
           >
             <p className="text-gray-400 dark:text-gray-600 text-lg leading-relaxed mb-4 text-justify">
-              The Department of Information Technology, Sri Venkateswara College of Engineering presents, <span className="text-7sm font-black text-white dark:text-gray-900 uppercase tracking-tight">Protocol </span><span className="text-red-600 font-bold">26E</span> is AIT's premier technical symposium, designed to accelerate innovation
+              The Department of Information Technology, Sri Venkateswara College of Engineering presents, <span className="text-7sm font-black text-white dark:text-gray-900 uppercase tracking-tight">Protocol </span><span className="text-red-600 font-bold">26E</span>, designed to accelerate innovation
               and technical excellence. Like a Formula 1 race weekend, we bring together the best
               minds to compete, collaborate, and push the limits of what's possible.
             </p>

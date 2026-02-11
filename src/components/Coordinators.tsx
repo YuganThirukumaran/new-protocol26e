@@ -10,6 +10,7 @@ export function Coordinators() {
       department: "placeholder",
       email: "placeholder",
       phone: "+91 9498330139",
+      image: "/madhu.jpeg",
     },
     {
         number: "02",
@@ -18,22 +19,25 @@ export function Coordinators() {
         department: "placeholder",
         email: "placeholder",
         phone: "+91 7358646539",
+        image: "/sanjeev.jpeg",
     },
     {
         number: "03",
-        name: "Swathi",
+        name: "Swathi A",
         role: "General Secretary",
         department: "placeholder",
         email: "placeholder",
         phone: "+91 7358665496",
+        image: "Swathi A.webp",
     },
     {
         number: "04",
-        name: "Iyappan",
+        name: "Iyappan N",
         role: "Joint-Secretary",
         department: "placeholder",
         email: "placeholder",
         phone: "+91 9344025755",
+        image: "Iyappan.jpg",
     },
   ];
 
@@ -114,8 +118,21 @@ export function Coordinators() {
 
                   {/* Profile Image Placeholder */}
                   <div className="mb-4 relative">
-                    <div className="w-full aspect-square bg-gradient-to-br from-gray-800 to-gray-900 border-2 border-gray-700 group-hover:border-cyan-400/50 transition-all duration-300 flex items-center justify-center">
-                      <Users className="w-16 h-16 text-gray-700 group-hover:text-cyan-400/50 transition-colors" />
+                    <div className="w-full aspect-square bg-gradient-to-br from-gray-800 to-gray-900 border-2 border-gray-700 group-hover:border-cyan-400/50 transition-all duration-300 flex flex-col items-center justify-center gap-2 overflow-hidden">
+                      {coordinator.image ? (
+                        <img
+                          src={coordinator.image}
+                          alt={`${coordinator.name} portrait`}
+                          className="w-full h-full object-cover"
+                        />
+                      ) : (
+                        <>
+                          <Users className="w-16 h-16 text-gray-700 group-hover:text-cyan-400/50 transition-colors" />
+                          <span className="text-[10px] uppercase tracking-[0.3em] text-gray-600 group-hover:text-cyan-400/70 transition-colors">
+                            Add Photo
+                          </span>
+                        </>
+                      )}
                     </div>
                     {/* Corner Brackets */}
                     <div className="absolute top-0 left-0 w-6 h-6 border-t-2 border-l-2 border-red-600" />
