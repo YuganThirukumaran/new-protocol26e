@@ -87,7 +87,7 @@ const COC_STYLES = `
 /* ── Theme colors (cyan + white, red accent) ── */
 const HAND_COLOR = "#06b6d4";        /* cyan-400 — primary hands */
 const CELL_BG = "#0c1222";           /* deep navy */
-const CELL_BORDER_COLOR = "#1e3a5f"; /* blue-tinted border */
+const CELL_BORDER_COLOR = "#0c1222"; /* blue-tinted border */
 const DOT_COLOR = "#ffffff";          /* white center dot */
 
 /* ── Hand sub-component ── */
