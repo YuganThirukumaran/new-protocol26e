@@ -11,7 +11,7 @@ export function HeroSection() {
           loop
           muted
           playsInline
-          className="h-full w-full object-cover opacity-40 dark:opacity-60"
+          className="h-full w-full object-cover opacity-100 dark:opacity-60"
           onError={(e) => {
             console.error("Video failed to load, using fallback image");
             const video = e.currentTarget;
@@ -150,7 +150,7 @@ export function HeroSection() {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 1 }}
-          className="mt-6 text-gray-400 dark:text-gray-600 tracking-[0.2em] text-sm md:text-base font-bold uppercase"
+          className="mt-6 text-gray-400 dark:text-gray-600 tracking-[0.2em] text-xl md:text-base font-bold uppercase"
         >
           21<sup>st</sup> February 2026
         </motion.div>

@@ -157,11 +157,6 @@ export function EventsGrid({
                   <div className="absolute bottom-2 left-2 h-6 w-6 border-b-2 border-l-2 border-cyan-400/50 transition-colors group-hover:border-cyan-400" />
                   <div className="absolute bottom-2 right-2 h-6 w-6 border-b-2 border-r-2 border-red-600/50 transition-colors group-hover:border-red-600" />
                 </div>
-
-                {/* Grid Position Indicator */}
-                <div className="absolute -left-3 -top-3 z-20 flex h-8 w-8 items-center justify-center border-2 border-red-600 bg-black dark:border-red-500 dark:bg-white">
-                  <span className="text-sm font-black text-red-500">{event.position}</span>
-                </div>
               </motion.div>
             ))}
           </div>

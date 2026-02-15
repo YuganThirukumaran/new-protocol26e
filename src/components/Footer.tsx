@@ -224,7 +224,7 @@ export function Footer({ onEventDetailsOpen, onEventDetailsClose }: FooterProps)
           />
         </div>
 
-        {/* Student Coordinators */}
+        {/* Student Coordinators
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -248,7 +248,7 @@ export function Footer({ onEventDetailsOpen, onEventDetailsClose }: FooterProps)
               </div>
             ))}
           </div>
-        </motion.div>
+        </motion.div> */}
 
         {/* Bottom Section */}
         <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
