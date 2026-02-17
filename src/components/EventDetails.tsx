@@ -29,6 +29,31 @@ interface EventDetailsProps {
   onBack: () => void;
 }
 
+function renderDescription(description: string) {
+  const sections = description.trim().split(/\n\s*\n/);
+
+  return sections.map((section, sectionIndex) => {
+    const lines = section.split("\n").map((line) => line.trim()).filter(Boolean);
+    if (!lines.length) return null;
+
+    const heading = lines[0].replace(/^\*\*/, "").replace(/\*\*$/, "");
+    const bullets = lines.slice(1).map((line) => line.replace(/^•\s*/, ""));
+
+    return (
+      <div key={`section-${sectionIndex}`} className="mb-4">
+        <p className="font-bold text-white text-base sm:text-lg mb-2">
+          {heading}
+        </p>
+        <ul className="list-disc list-inside space-y-2 text-gray-200 text-sm sm:text-base leading-relaxed">
+          {bullets.map((item, idx) => (
+            <li key={`bullet-${sectionIndex}-${idx}`}>{item}</li>
+          ))}
+        </ul>
+      </div>
+    );
+  });
+}
+
 export function EventDetails({ event, onBack }: EventDetailsProps) {
   const scrollRef = useRef<HTMLDivElement>(null);
 
@@ -177,12 +202,14 @@ export function EventDetails({ event, onBack }: EventDetailsProps) {
           </div>
 
           <div className="bg-gray-900/50 border border-gray-800 p-6 sm:p-8 md:p-10 border-l-2 border-l-red-600">
-            <p
+            <div
               className="text-white text-md sm:text-base leading-relaxed break-words"
-              style={{ fontFamily: "'Google Sans Flex', sans-serif" }}
+              style={{
+                fontFamily: "'Google Sans Flex', sans-serif",
+              }}
             >
-              {event.description}
-            </p>
+              {renderDescription(event.description)}
+            </div>
           </div>
         </motion.div>
 

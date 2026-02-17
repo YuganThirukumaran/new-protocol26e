@@ -24,7 +24,7 @@ export const events: Event[] = [
     teamSize: "2-3 members",
     venue: "Natural Language processing Laboratory, INT Block 1st Floor",
     coordinators: [
-      { name: "Yugan", phone: "+91 9943446455" },
+      { name: "Naveen", phone: "+91 9360314286" },
       { name: "Rahul", phone: "+91 9342341945" },
     ],
     registerLink: "https://forms.gle/a4qS4rVqWXjGPKpz6",
@@ -34,8 +34,16 @@ export const events: Event[] = [
     position: 2,
     title: "Final Lap Escape",
     subtitle: "Tech Puzzle Escape Challenge",
-    description:
-      "Participants compete in teams through a sequence of interconnected tech puzzles, where solving one challenge unlocks the next clue or digital access toward the final escape. The challenges include debugging buggy code snippets (in C, Python, Java, or JavaScript) to uncover passwords or keys, decrypting messages using ciphers like Caesar, substitution, binary, or Base64 to reveal locations or locks, and solving logic puzzles that gradually increase in technical complexity-keeping the experience engaging for both beginners and experienced coders.",
+    description: `**Round 1: Cinematic Clue Identification**
+A set of ten cinematic clues will be displayed one by one on the projector. Teams must identify the clues and write down their answers within the given time. Teams are not allowed to interact with other teams during the round. The two teams with the least number of correct answers will be eliminated.
+
+**Round 2: Technical Crossword and Dumb Charades**
+Each team must nominate one member for this round. The nominated member will solve a technical crossword. The nominated member must memorize the answers. The remaining two members of the team will be seated separately. The nominated member will act out the technical terms (Dumb Charades format) for the remaining two members to guess.
+The top four teams will proceed to the final round.
+
+**Round 3: Technical Clue Hunt and Code Decoding**
+Three clues will be hidden, where each clue leads to the next. The final clue will contain a code snippet or an encoded output. Teams must decode the snippet to obtain a password. The password must be entered in the system provided to reveal the final output. Only one team will be allowed at a time for this round. Each team will be given a maximum time limit of ten minutes. If the time exceeds, the team will be eliminated. If the decoded output is incorrect, the team will be eliminated.
+The winner will be finalized based on the least time taken to complete the final decoding successfully.`,
     teamSize: "3 members",
     venue: "5th Block Classroom 501",
     coordinators: [
