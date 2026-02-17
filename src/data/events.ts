@@ -20,12 +20,12 @@ export const events: Event[] = [
     title: "Grand Prix of Code",
     subtitle: "A Competitive Coding Challenge",
     description:
-      "A high-energy, battle-royale-style coding competition where teams of 3-4 compete through multiple elimination rounds. All teams begin together in Round 1 (The Drop), solving basic coding and debugging tasks, with the weakest and slowest teams eliminated. Round 2 (The Shrinking Zone) increases time pressure and focuses on logic-heavy and moderate algorithmic problems like sorting, searching, and classic LeetCode-style challenges, allowing only the top half to advance. In the Final Showdown, remaining teams face advanced problem-solving under extreme time constraints, with teams eliminated one by one as others finish correct solutions-crowning the last team standing as the winner and the second-last as runner-up.",
-    teamSize: "3-4 members",
+      "A high-energy, battle-royale-style coding competition where teams of 3-4 compete through multiple elimination rounds. All teams begin together in Round 1 (The Drop), solving basic coding, with the weakest and slowest teams eliminated. Round 2 (The Shrinking Zone) increases time pressure and focuses on logic-heavy and moderate algorithmic problems like sorting, searching, and classic LeetCode-style challenges, allowing only the top half to advance. In the Final Showdown, remaining teams face advanced problem-solving under extreme time constraints, with teams eliminated one by one as others finish correct solutions-crowning the last team standing as the winner and the second-last as runner-up.",
+    teamSize: "2-3 members",
     venue: "Natural Language processing Laboratory, INT Block 1st Floor",
     coordinators: [
       { name: "Yugan", phone: "+91 9943446455" },
-      { name: "Ragul", phone: "+91 9342341945" },
+      { name: "Rahul", phone: "+91 9342341945" },
     ],
     registerLink: "https://forms.gle/a4qS4rVqWXjGPKpz6",
   },
@@ -36,7 +36,7 @@ export const events: Event[] = [
     subtitle: "Tech Puzzle Escape Challenge",
     description:
       "Participants compete in teams through a sequence of interconnected tech puzzles, where solving one challenge unlocks the next clue or digital access toward the final escape. The challenges include debugging buggy code snippets (in C, Python, Java, or JavaScript) to uncover passwords or keys, decrypting messages using ciphers like Caesar, substitution, binary, or Base64 to reveal locations or locks, and solving logic puzzles that gradually increase in technical complexity-keeping the experience engaging for both beginners and experienced coders.",
-    teamSize: "2-3 members",
+    teamSize: "3 members",
     venue: "5th Block Classroom 501",
     coordinators: [
       { name: "Hemanath", phone: "+91 9360823431" },
