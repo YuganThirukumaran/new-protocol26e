@@ -44,7 +44,7 @@ The top four teams will proceed to the final round.
 **Round 3: Technical Clue Hunt and Code Decoding**
 Three clues will be hidden, where each clue leads to the next. The final clue will contain a code snippet or an encoded output. Teams must decode the snippet to obtain a password. The password must be entered in the system provided to reveal the final output. Only one team will be allowed at a time for this round. Each team will be given a maximum time limit of ten minutes. If the time exceeds, the team will be eliminated. If the decoded output is incorrect, the team will be eliminated.
 The winner will be finalized based on the least time taken to complete the final decoding successfully.`,
-    teamSize: "3 members",
+    teamSize: "2-3 members",
     venue: "5th Block Classroom 501",
     coordinators: [
       { name: "Hemanath", phone: "+91 9360823431" },
