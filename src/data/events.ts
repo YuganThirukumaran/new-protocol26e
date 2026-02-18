@@ -20,7 +20,16 @@ export const events: Event[] = [
     title: "Grand Prix of Code",
     subtitle: "A Competitive Coding Challenge",
     description:
-      "A high-energy, battle-royale-style coding competition where teams of 3-4 compete through multiple elimination rounds. All teams begin together in Round 1 (The Drop), solving basic coding, with the weakest and slowest teams eliminated. Round 2 (The Shrinking Zone) increases time pressure and focuses on logic-heavy and moderate algorithmic problems like sorting, searching, and classic LeetCode-style challenges, allowing only the top half to advance. In the Final Showdown, remaining teams face advanced problem-solving under extreme time constraints, with teams eliminated one by one as others finish correct solutions-crowning the last team standing as the winner and the second-last as runner-up.",
+      `**ROUND 1 — Foundation Sprint (45–60 min · All Teams)**
+A pool of Easy questions is released. Each question has a point value based on difficulty. Attempt as many as you can — every correct submission earns you points. Your closing score becomes your balance for Round 2. No eliminations this round.
+
+**ROUND 2 — The Marketplace (45–60 min · All Teams)**
+Use your Round 1 balance to purchase Medium-level questions from the portal. Each question has a cost — you can only buy what you can afford. Solve your purchased questions to earn back more than you spent. Teams with the highest balance at the end advance. Bottom teams are eliminated. Top teams proceed to Round 3.
+
+**ROUND 3 — Grand Prix Finale (45–60 min · Qualified Teams )**
+Pick a Hard question and place a points bid on it. Solve it — you win your bid back doubled. Fail — you lose the bid. Choose wisely.
+Hint System: Need a hint? One team member answers a 30-second rapid-fire quiz. Get it right — hint unlocked. Get it wrong — no hint, no retry. One attempt per question.
+The team with the highest balance at the end wins.`,
     teamSize: "2-3 members",
     venue: "Natural Language processing Laboratory, INT Block 1st Floor",
     coordinators: [
